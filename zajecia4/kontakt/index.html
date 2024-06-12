@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+              name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <title>Kontakt</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Strona główna</a></li>
+                    <li><a href="../memes/index.html">Memy</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Kontakt</h1>
+                <form action="#">
+                    <fieldset id="basicData">
+                        <div>
+                            <label for="firstName">Imię:</label>
+                            <input id="firstName" name="firstName" placeholder="Twoja magiczne imię" type="text" autofocus>
+                        </div>
+                        <div>
+                            <label for="lastName">Nazwisko:</label>
+                            <input id="lastName" name="lastName" placeholder="Twoje magiczne nazwisko" type="text">
+                        </div>
+                        <div>
+                            <label for="age">Wiek:</label>
+                            <input id="age" name="age" placeholder="Twój magiczny wiek" type="number">
+                        </div>
+                    </fieldset>
+                    <fieldset id="otherData">
+                        <div>
+                            <label for="rangeSmth">Przedział</label><br>
+                            <input id="rangeSmth" name="rangeSmth" type="range">
+                        </div>
+                        <div>
+                            <label for="date">Wybierz datę urodzin</label><br>
+                            <input id="date" name="date" type="date">
+                        </div>
+                        <div>
+                            <label for="colourSmth">Wybierz swój kolor</label><br>
+                            <input id="colourSmth" name="colourSmth" type="color">
+                        </div>
+                        <div>
+                            <label for="country">Kraj:</label>
+                            <select id="country" name="country" type="range">
+                                <option value="pl">Polska</option>
+                                <option value="de">Niemcy</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="sex_f">Kobieta</label>
+                            <input id="sex_f" name="sex" type="radio" value="f">
+                            <label for="sex_m">Mężczyzna</label>
+                            <input id="sex_m" name="sex" type="radio" value="m">
+                        </div>
+                    </fieldset>
+                    <div>
+                        <input id="terms" name="terms" type="checkbox">
+                        <label for="terms">Akceptuję regulamin</label>
+                    </div><br>
+                    <div>
+                            <input type="submit" value="Poślij w cholerę">
+                    </div>
+                </form>
+            </section>
+            <section>
+                <h2>Napisz do mnie</h2>
+                <ul>
+                    <li>Imię: Kunegunda</li>
+                    <li>Nazwisko: Przesącz</li>
+                    <li>E-mail: kuper@drob.pl</li>
+                </ul>
+
+                <form>
+                    <div>
+                        <label for="yourText"> Masz problem?</label><br>
+                        <textarea id="yourText" cols="30" rows="5"></textarea>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>Made by Poznańska Pyra©</footer>
+    </body>
+</html>
