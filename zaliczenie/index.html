@@ -12,245 +12,290 @@
         <link href="css/main.css" rel="stylesheet">
         <link href="css/content.css" rel="stylesheet">
         <meta charset="UTF-8">
-        <title>ShoperStagram</title>
+        <title>ShopStagram</title>
     </head>
     <body>
         <header>
-            <nav class="header-nav">
-                <img alt="logo" src="images/logo.svg">
-                <div>
-                    <label for="search"></label>
-                    <input id="search" placeholder="Szukaj" type="search">
-                </div>
-                <img alt="home" src="images/icons/home.svg">
-                <img alt="send" src="images/icons/send.svg">
-                <img alt="add" src="images/icons/add.svg">
-                <img alt="heart" src="images/icons/heart.svg">
-                <img alt="you" src="images/users/user.jpeg">
-            </nav>
+            <div class="container">
+                <nav class="header-nav">
+                    <img alt="logo" src="images/logo.svg">
+                    <div class="header-search">
+                        <img alt="search" src="images/icons/magnifier.svg">
+                        <label for="search"></label>
+                        <input id="search" placeholder="Szukaj" type="search">
+                    </div>
+                    <div class="links">
+                        <a href="#">
+                            <img alt="home" src="images/icons/home.svg">
+                        </a>
+                        <a href="#">
+                            <img alt="send" src="images/icons/send.svg">
+                        </a>
+                        <a href="#">
+                            <img alt="add" src="images/icons/add.svg">
+                        </a>
+                        <a href="#">
+                            <img alt="heart" src="images/icons/heart.svg">
+                        </a>
+                        <a href="#">
+                            <img alt="you" class="your-profile" href="other_pages/other_page.html"
+                                 src="images/users/user.jpeg">
+                        </a>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main>
-            <div>
-                <section class="users">
-                    <div class="user-box">
-                        <img alt="john" src="images/users/john.jpeg">
-                        John Doe
-                    </div>
-                    <div class="box-user">
-                        <img alt="will" src="images/users/will.jpeg">
-                        Will Smith
-                    </div>
-                    <div class="box-user">
-                        <img alt="johny" src="images/users/johny.jpeg">
-                        Johny Cage
-                    </div>
-                    <div class="box-user">
-                        <img alt="lisa" src="images/users/lisa.jpeg">
-                        Lisa
-                    </div>
-                    <div class="user-box">
-                        <img alt="amanda" src="images/users/amanda.jpeg">
-                        Amanda
-                    </div>
-                    <div class="box-user">
-                        <img alt="cristiano" src="images/users/cristiano.jpeg">
-                        Cristiano R.
-                    </div>
-                    <div class="box-user">
-                        <img alt="martha" src="images/users/martha.jpeg">
-                        Martha
-                    </div>
-                    <div class="user-box">
-                        <img alt="joanna" src="images/users/joanna.jpeg">
-                        Joanna
-                    </div>
-                    <div class="box-user">
-                        <img alt="mark" src="images/users/mark.jpeg">
-                        Mark O.
-                    </div>
-                    <div class="box-user">
-                        <img alt="paul" src="images/users/paul.jpeg">
-                        Paul
-                    </div>
-                    <div class="user-box">
-                        <img alt="joshua" src="images/users/joshua.jpeg">
-                        Joshua
-                    </div>
-                    <div class="box-user">
-                        <img alt="sophie" src="images/users/sophie.jpeg">
-                        Sophie Smith
-                    </div>
-                    <div class="box-user">
-                        <img alt="ursula" src="images/users/ursula.jpeg">
-                        Ursula Cage
-                    </div>
-                    <div class="user-box">
-                        <img alt="betty" src="images/users/betty.jpeg">
-                        Betty Doe
-                    </div>
-                </section>
-                <section class="content">
-                    <div class="box-content">
-                        <div class="content-header">
-                            <div class="content-user">
-                                <img alt="john" src="images/users/john.jpeg">
-                                <div>
-                                    <p>John Doe</p>
-                                    <p>Szczecin, Polska</p>
+            <div class="container main-all">
+                <div class="container wall">
+                    <div class="wall">
+                        <section class="users">
+                            <div class="user-box">
+                                <img alt="john" class="active-user" src="images/users/john.jpeg">
+                                John Doe
+                            </div>
+                            <div class="user-box">
+                                <img alt="will" class="active-user" src="images/users/will.jpeg">
+                                Will Smith
+                            </div>
+                            <div class="user-box">
+                                <img alt="johny" class="active-user" src="images/users/johny.jpeg">
+                                Johny Cage
+                            </div>
+                            <div class="user-box">
+                                <img alt="lisa" class="active-user" src="images/users/lisa.jpeg">
+                                Lisa
+                            </div>
+                            <div class="user-box">
+                                <img alt="amanda" class="active-user" src="images/users/amanda.jpeg">
+                                Amanda
+                            </div>
+                            <div class="user-box">
+                                <img alt="cristiano" class="active-user" src="images/users/cristiano.jpeg">
+                                Cristiano R.
+                            </div>
+                            <div class="user-box">
+                                <img alt="martha" class="active-user" src="images/users/martha.jpeg">
+                                Martha
+                            </div>
+                            <div class="user-box">
+                                <img alt="joanna" class="active-user" src="images/users/joanna.jpeg">
+                                Joanna
+                            </div>
+                            <div class="user-box">
+                                <img alt="mark" class="active-user" src="images/users/mark.jpeg">
+                                Mark O.
+                            </div>
+                            <div class="user-box">
+                                <img alt="paul" class="active-user" src="images/users/paul.jpeg">
+                                Paul
+                            </div>
+                            <div class="user-box">
+                                <img alt="joshua" class="active-user" src="images/users/joshua.jpeg">
+                                Joshua
+                            </div>
+                            <div class="user-box">
+                                <img alt="sophie" class="active-user" src="images/users/sophie.jpeg">
+                                Sophie Smith
+                            </div>
+                            <div class="user-box">
+                                <img alt="ursula" class="active-user" src="images/users/ursula.jpeg">
+                                Ursula Cage
+                            </div>
+                            <div class="user-box">
+                                <img alt="betty" class="active-user" src="images/users/betty.jpeg">
+                                Betty Doe
+                            </div>
+                        </section>
+                        <section class="content">
+                            <div class="box-content">
+                                <div class="content-header">
+                                    <div class="content-user">
+                                        <img alt="john" class="author active-user" src="images/users/john.jpeg">
+                                        <div>
+                                            <span class="name">John Doe</span><br>
+                                            <span>Szczecin, Polska</span>
+                                        </div>
+                                    </div>
+                                    <img alt="menu" src="images/icons/menu.svg">
+                                </div>
+                                <div class="content-main">
+                                    <img alt="foto1" class="content-foto" src="images/photos/gielda.jpeg">
+                                    <div class="content-nav">
+                                        <img alt="send" src="images/icons/send.svg">
+                                        <img alt="add" src="images/icons/add.svg">
+                                        <img alt="heart" src="images/icons/heart.svg">
+                                    </div>
+                                    <div class="content-likes">
+                                        <span>Liczba polubień: 2</span>
+                                    </div>
+                                    <div class="content-text">
+                                <span class="name">John Doe:
+                                    <span class="text">Admagnis magna esse adolescens tractatos prompta dolorem fuisset singulis maecenas potenti saperet petentium quod movet aenean tale.  Nosteradipisci luptatum recteque qui nostra sanctus vix utinam luctus ornatus varius aeque magna.
+                                        <span class="more">Więcej...
+                                        </span>
+                                    </span>
+                                </span>
+                                    </div>
+                                </div>
+                                <div class="content-footer">
+                                    <img alt="emotikony" src="images/icons/smile.svg">
+                                    <div>
+                                        <label for="comment"></label>
+                                        <input id="comment" placeholder="Dodaj komentarz..." type=text>
+                                    </div>
                                 </div>
                             </div>
-                            <img alt="menu" src="images/icons/menu.svg">
-                        </div>
-                        <div class="content-main">
-                            <img alt="foto1" class="content-foto" src="images/photos/gielda.jpeg">
-                            <div class="content-nav">
-                                <img alt="send" src="images/icons/send.svg">
-                                <img alt="add" src="images/icons/add.svg">
-                                <img alt="heart" src="images/icons/heart.svg">
+                            <div class="box-content">
+                                <div class="content-header">
+                                    <div class="content-user">
+                                        <img alt="lisa" class="author active-user" src="images/users/lisa.jpeg">
+                                        <div>
+                                            <span class="name">Lisa</span><br>
+                                            <span>Poznań, Polska</span>
+                                        </div>
+                                    </div>
+                                    <img alt="menu" src="images/icons/menu.svg">
+                                </div>
+                                <div class="content-main">
+                                    <img alt="foto1" class="content-foto" src="images/photos/stoisko.jpeg">
+                                    <div class="content-nav">
+                                        <img alt="send" src="images/icons/send.svg">
+                                        <img alt="add" src="images/icons/add.svg">
+                                        <img alt="heart" src="images/icons/heart.svg">
+                                    </div>
+                                    <div class="content-likes">
+                                        <span>Liczba polubień: 2</span>
+                                    </div>
+                                    <div class="content-text">
+                                <span class="name">Lisa Pyra:
+                                    <span class="text">Admagnis magna esse adolescens tractatos prompta dolorem fuisset singulis maecenas potenti saperet petentium quod movet aenean tale.  Nosteradipisci luptatum recteque qui nostra sanctus vix utinam luctus ornatus varius aeque magna.
+                                        <span class="more">Więcej...</span>
+                                    </span>
+                                </span>
+                                    </div>
+                                </div>
+                                <div class="content-footer">
+                                    <img alt="emotikony" src="images/icons/smile.svg">
+                                    <div>
+                                        <label for="comment_1"></label>
+                                        <input id="comment_1" placeholder="Dodaj komentarz..." type=text>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content-likes">
-                                <span>Liczba polubień: 2</span>
+                            <div class="box-content">
+                                <div class="content-header">
+                                    <div class="content-user">
+                                        <img alt="cristiano" class="author active-user"
+                                             src="images/users/cristiano.jpeg">
+                                        <div>
+                                            <span class="name">Cristiano</span><br>
+                                            <span>Kraków, Polska</span>
+                                        </div>
+                                    </div>
+                                    <img alt="menu" src="images/icons/menu.svg">
+                                </div>
+                                <div class="content-main">
+                                    <img alt="foto1" class="content-foto" src="images/photos/presentation.jpeg">
+                                    <div class="content-nav">
+                                        <img alt="send" src="images/icons/send.svg">
+                                        <img alt="add" src="images/icons/add.svg">
+                                        <img alt="heart" src="images/icons/heart.svg">
+                                    </div>
+                                    <div class="content-likes">
+                                        <span>Liczba polubień: 2</span>
+                                    </div>
+                                    <div class="content-text">
+                                <span class="name">Cristiano Dragon:
+                                    <span class="text">Admagnis magna esse adolescens tractatos prompta dolorem fuisset singulis maecenas potenti saperet petentium quod movet aenean tale.  Nosteradipisci luptatum recteque qui nostra sanctus vix utinam luctus ornatus varius aeque magna.
+                                        <span class="more">Więcej...
+                                        </span>
+                                    </span>
+                                </span>
+                                    </div>
+                                </div>
+                                <div class="content-footer">
+                                    <img alt="emotikony" src="images/icons/smile.svg">
+                                    <div>
+                                        <label for="comment_2"></label>
+                                        <input id="comment_2" placeholder="Dodaj komentarz..." type=text>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content-text">
-                                <span>Imię nazwisko: </span>
-                                <span>Admagnis magna esse adolescens tractatos prompta dolorem fuisset singulis maecenas potenti saperet petentium quod movet aenean tale.  Nosteradipisci luptatum recteque qui nostra sanctus vix utinam luctus ornatus varius aeque magna.</span>
-                                <span class="more">Więcej</span>
+                            <div class="box-content see-more">
+                                <p>Załaduj więcej...
                             </div>
-                        </div>
-                        <div class="content-footer">
-                            <img alt="emotikony" src="images/icons/smile.svg">
-                            <div>
-                                <label for="comment"></label>
-                                <input id="comment" placeholder="Dodaj komentarz..." type=text>
-                            </div>
-                        </div>
+                        </section>
                     </div>
-                    <div class="box-content">
-                        <div class="content-header">
-                            <img alt="lisa" src="images/users/lisa.jpeg">
-                            <div>
-                                <p>Lisa </p>
-                                <p>Poznań, Polska</p>
+                </div>
+                <div class="container sidebar">
+                    <div class="social">
+                        <section>
+                            <div class="you">
+                                <div class="people-box">
+                                    <img alt="you" src="images/users/user.jpeg">
+                                    <div>
+                                        <span class="name">Mark Shoper</span><br>
+                                        <span>Mark Shoper</span>
+                                    </div>
+                                </div>
+                                <a class="relogin" href="#">Przełącz</a>
                             </div>
-                            <img alt="menu" src="images/icons/menu.svg">
-                        </div>
-                        <div class="content-main">
-                            <img alt="foto1" class="content-foto" src="images/photos/stoisko.jpeg">
-                            <div class="content-nav">
-                                <img alt="send" src="images/icons/send.svg">
-                                <img alt="add" src="images/icons/add.svg">
-                                <img alt="heart" src="images/icons/heart.svg">
+                        </section>
+                        <section class="others">
+                            <div class="others-header">
+                                <span>Propozycje dla Ciebie</span>
+                                <span class="see-all">Zobacz wszystkie</span>
                             </div>
-                            <div class="content-likes">
-                                <span>Liczba polubień: 2</span>
+                            <div class="all-props">
+                                <div class="other-props">
+                                    <div class="people-box">
+                                        <img alt="joshua" src="images/users/joshua.jpeg">
+                                        <div>
+                                            <span class="name">Joshua Deep</span><br>
+                                            <span>Nowy i wesoły</span>
+                                        </div>
+                                    </div>
+                                    <a class="observe" href="#">Obserwuj</a>
+                                </div>
+                                <div class="other-props">
+                                    <div class="people-box">
+                                        <img alt="sophie" class=" active-user" src="images/users/sophie.jpeg">
+                                        <div>
+                                            <span class="name">Sophie Lee</span><br>
+                                            <span>Obserwowana przez John</span>
+                                        </div>
+                                    </div>
+                                    <a class="observe" href="#">Obserwuj</a>
+                                </div>
+                                <div class="other-props">
+                                    <div class="people-box">
+                                        <img alt="betty" src="images/users/betty.jpeg">
+                                        <div>
+                                            <span class="name">Ugly Betty</span><br>
+                                            <span>Obserwowana przez Mark</span>
+                                        </div>
+                                    </div>
+                                    <a class="observe" href="#">Obserwuj</a>
+                                </div>
                             </div>
-                            <div class="content-text">
-                                <span>Imię nazwisko: </span>
-                                <span>Admagnis magna esse adolescens tractatos prompta dolorem fuisset singulis maecenas potenti saperet petentium quod movet aenean tale.  Nosteradipisci luptatum recteque qui nostra sanctus vix utinam luctus ornatus varius aeque magna.</span>
-                                <span class="more">Więcej</span>
-                            </div>
-                        </div>
-                        <div class="content-footer">
-                            <img alt="emotikony" src="images/icons/smile.svg">
-                            <div>
-                                <label for="comment_1"></label>
-                                <input id="comment_1" placeholder="Dodaj komentarz..." type=text>
-                            </div>
-                        </div>
+                        </section>
                     </div>
-                    <div class="box-content">
-                        <div class="content-header">
-                            <img alt="cristiano" src="images/users/cristiano.jpeg">
-                            <div>
-                                <p>Cristiano</p>
-                                <p>Kraków, Polska</p>
-                            </div>
-                            <img alt="menu" src="images/icons/menu.svg">
-                        </div>
-                        <div class="content-main">
-                            <img alt="foto1" class="content-foto" src="images/photos/presentation.jpeg">
-                            <div class="content-nav">
-                                <img alt="send" src="images/icons/send.svg">
-                                <img alt="add" src="images/icons/add.svg">
-                                <img alt="heart" src="images/icons/heart.svg">
-                            </div>
-                            <div class="content-likes">
-                                <span>Liczba polubień: 2</span>
-                            </div>
-                            <div class="content-text">
-                                <span>Imię nazwisko: </span>
-                                <span>Admagnis magna esse adolescens tractatos prompta dolorem fuisset singulis maecenas potenti saperet petentium quod movet aenean tale.  Nosteradipisci luptatum recteque qui nostra sanctus vix utinam luctus ornatus varius aeque magna.</span>
-                                <span class="more">Więcej</span>
-                            </div>
-                        </div>
-                        <div class="content-footer">
-                            <img alt="emotikony" src="images/icons/smile.svg">
-                            <div>
-                                <label for="comment_2"></label>
-                                <input id="comment_2" placeholder="Dodaj komentarz..." type=text>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="see-more">
-                        <p>Zobacz więcej...
-                    </div>
-                </section>
-            </div>
-            <div>
-                <section class="you">
-                    <div class="you">
-                        <div class="other-foto">
-                            <img alt="you" src="images/users/user.jpeg">
-                        </div>
-                        <div>
-                            <p>Twoje imię i nazwisko</p>
-                            <p>Opis</p>
-                        </div>
-                        <div class="observe">Przełącz</div>
-                    </div>
-                </section>
-                <section class="others">
-                    <div class="others-header">
-                        <span>Propozycje dla Ciebie</span>
-                        <span>Zobacz wszystkie</span>
-                    </div>
-                    <div class="others-props">
-                        <div class="other-props-box">
-                            <img alt="joshua" src="images/users/joshua.jpeg">
-                            <div>
-                                <p>Imię i nazwisko</p>
-                                <p>Opis</p>
-                            </div>
-                        </div>
-                        <div class="other-props-box-active">
-                            <img alt="sophie" src="images/users/sophie.jpeg">
-                            <div>
-                                <p>Imię i nazwisko</p>
-                                <p>Opis</p>
-                            </div>
-                        </div>
-                        <div class="other-props-box">
-                            <img alt="betty" src="images/users/betty.jpeg">
-                            <div>
-                                <p>Imię i nazwisko</p>
-                                <p>Opis</p>
-                            </div>
-                        </div>
-                        <div class="observe">Obserwuj</div>
-                    </div>
-                </section>
+                </div>
             </div>
         </main>
         <footer>
-            <nav class="footer-nav">
-                <a href="./other_pages/other_page.html">Informacje</a>
-                <a href="./other_pages/other_page.html">Pomoc</a>
-                <a href="./other_pages/other_page.html">Praca</a>
-                <a href="./other_pages/other_page.html">Regulamin</a>
-                <a href="./other_pages/other_page.html">Lokalizacje</a>
-                <a href="./other_pages/other_page.html">Język</a>
-            </nav>
-            © 20024 ShopStagram
+            <div class="container">
+                <nav class="footer-nav">
+                    <a href="./other_pages/other_page.html">Informacje</a>
+                    <a href="./other_pages/other_page.html">Pomoc</a>
+                    <a href="./other_pages/other_page.html">Praca</a>
+                    <a href="./other_pages/other_page.html">Regulamin</a>
+                    <a href="./other_pages/other_page.html">Lokalizacje</a>
+                    <a href="./other_pages/other_page.html">Język</a>
+                </nav>
+                <p>© 2024 ShopStagram</p>
+            </div>
         </footer>
     </body>
 </html>
