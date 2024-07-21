@@ -1,11 +1,189 @@
 * {
-    box-sizing: border-box;
+    box-sizing: content-box;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #FFFFFF;
+    padding: 10px 0;
+}
+
+main {
+    background-color: #efefef;
+    padding: 10px;
+}
+
+.header-nav, .header-search, .users, .box-content {
+    background-color: #FFFFFF;
+}
+
+.box-content, .users {
+    border: 2px solid #969696;
+    border-radius: 5px;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-search {
+    border: 1px solid #dbdbdb;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+    display: flex;
+}
+
+.header-search > img {
+    margin: 10px;
+}
+
+.header-search > input {
+    border: none;
+    background-color: #dbdbdb;
+    font-size: 14px;
+}
+
+.header-nav > .links {
+    display: flex;
+    max-height: 60px;
+}
+
+.header-nav > .links > a:not(.your-profile) {
+    max-height: 35px;
+    padding: 10px;
+    text-decoration: none;
+    vertical-align: center;
+}
+
+.your-profile {
+    border-radius: 50%;
+    max-height: 35px;
+}
+
+.users {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    max-width: 700px;
+    align-items: center;
+    max-height: 200px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px
+}
+
+.user-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+
+.user-box > img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    height: 80px;
+}
+
+footer, .footer-nav > a {
+    color: #969696;
+    max-width: 700px;
+    margin: 5px;
+    font-style: normal;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+    .header-nav > .header-search, .social {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        position: relative;
+    }
+
+    main {
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .main-all {
+        gap: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 1000px;
+    }
+
+    .wall {
+        max-width: 600px;
+        align-items: flex-start;
+    }
+
+    .sidebar {
+        position: relative;
+        max-width: 350px;
+    }
+
+    .social {
+        position: static;
+
+    }
+}
+
+.you, .people-box, .other-props {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.people-box > img {
+    border-radius: 50%;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid #969696;
+}
+
+.others-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px;
+}
+
+.see-all {
+    font-weight: bold;
+}
+
+.observe, .relogin {
+    text-decoration: none;
+}
+
+.active-user {
+    border: 3px solid #dd2a7c !important;
 }
 
 body {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 300;
-    font-style: italic;
+    font-style: normal;
 }
 
 .chakra-petch-light {
